@@ -253,7 +253,7 @@ img {
 }
 
 .demo_con .demo_bottom .demo_d2{
-	background: url(img/ju_hai.jpg) no-repeat;
+	background: url(img/gallery.png) no-repeat;
 	background-size: 100% 100%;
 }
 .demo_con .demo_bottom .demo_d2 div{
@@ -288,7 +288,6 @@ img {
 	display: none;
 }
 .demo_con .demo_bottom .demo_d3 div h3{
-	color: red;
 	text-align: center;
 	line-height: 40px;
 }
@@ -312,14 +311,7 @@ img {
 	padding-left: 50px;
 	cursor: pointer;
 }
-/*.about_con h3{
-	width: 450px;
-	height: 100px;
-	margin: 0 auto;
-	font:normal 16px/40px "微软雅黑";
-	color: red;
-	text-align: center;
-}*/
+
 .about_con h3{
 	width: 450px;
 	height: 30px;

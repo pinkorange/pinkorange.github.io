@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>相册</title>
+		<style type="text/css">
+			#imgs  {
+				list-style: none
+			}
+			#imgs li {
+				display: inline-block;
+				margin-left: 50px;
+			}
+			#imgs li img {
+				max-width: 80px;
+			}
+			
+			.div2 img {
+				width: 400px;
+				height: 250px;
+				margin-left: 130px;
+				max-width: 400px;
+			}
+		</style>
+	</head>
+	<body>
+		<h2>画廊</h2>
+		<ul id="imgs">
+			<li><a href="img/al_1.jpg" title="美女A" onclick="showPic(this);return false;">
+				<img src="img/al_1.jpg"/ alt="美女1"></a></li>
+			<li><a href="img/al_2.jpg" title="美女B" onclick="showPic(this);return false;">
+				<img src="img/al_2.jpg"/ alt="美女2"></a></li>
+			<li><a href="img/al_3.jpg" title="美女C" onclick="showPic(this);return false;">
+				<img src="img/al_3.jpg"/ alt="美女3"></a></li>
+			<li><a href="img/al_4.jpg" title="美女D" onclick="showPic(this);return false;">
+				<img src="img/al_4.jpg"/ alt="美女4"></a></li>
+		</ul>
+		
+		<div class="div2">
+			<img id="image" src="img/placeholder.png"/>
+		</div>
+		
+		<p id="des">选择一个图片</p>
+		
+		
+		
+		<script type="text/javascript">
+		//1 能够点击
+			//获取页面上的a标签
+			function showPic (ims) {
+				//2 改变图片
+				var img = document.getElementById('image');
+				img.src = ims.href;
+				//3 改变p标题
+				var p = document.getElementById('des');
+				p.innerHTML = ims.title;
+			}
+		</script>
+	</body>
+</html>
