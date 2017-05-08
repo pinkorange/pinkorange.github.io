@@ -1,0 +1,369 @@
+@charset "utf-8";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+table{
+	border-collapse:collapse;
+	border-spacing:0;
+}
+a {
+	text-decoration: none;
+	color: #000000;
+}
+em,strong,b,u,i {
+	font-style:normal;
+	font-weight: normal;
+}
+ol,ul,li {
+	list-style: none;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+img {
+	border: 0 none; 
+}
+
+
+
+.div{
+	min-width: 940px;
+	background: url(img/ju_01.jpg);
+	background-size: 100% 100%;
+}
+
+/*herad*/
+.herad{
+	width: 100%;
+	height: 50px;
+	padding-top: 10px;
+}
+.herad_con{
+	width: 940px;
+	margin: 0 auto;
+	background: #69c1f1;
+}
+.herad_con ul{
+	width: 450px;
+	height: 50px;
+	margin-left: 50px;
+}
+.herad_con ul li{
+	float: left;
+	width: 100px;
+}
+.herad_con ul li a{
+	display: block;
+	height: 50px;
+	font: normal 16px/50px "微软雅黑";
+}
+.herad_con ul li a:hover{
+	color: #fff;
+}
+
+/*banner区域*/
+.banner{
+	width: 100%;
+	height: 300px;
+}
+.banner .banner_con{
+	width: 940px;
+	height: 300px;
+	margin: 0 auto;
+	background: url(img/juzi_banner.jpg);
+	background-size: 100% 100%;
+	position: relative;
+}
+.banner_con h2{
+	position: absolute;
+	width: 350px;
+	height: 120px;
+	top: 30%;
+	right: 0;
+	font: normal 20px/40px "微软雅黑";
+	padding: 10px 10px;
+}
+.banner_con h2:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+.banner_con p{
+	display: none;
+}
+
+/*技能*/
+.skill{
+	width: 100%;
+	height: 350px;
+}
+.skill_con{
+	width: 940px;
+	height: 350px;
+	margin: 0 auto;
+	background: white;
+}
+.skill_con h2{
+	height: 50px;
+	font:normal 20px/50px "微软雅黑";
+	padding-left: 50px;
+	cursor: pointer;	
+}
+.skill_con .skill_con_right{
+	background: url(img/skill.gif) bottom right no-repeat;
+}
+.skill_con .skill_con_right ul{
+	height: 300px;
+	margin-left: 30px;
+}
+.skill_con .skill_con_right ul li{
+	overflow: hidden;
+	float:left;
+	width:40px;
+	height: 300px;
+	background:#f0f0f0;
+	border-left:1px solid #f0f0f0;
+	transition: width 0.3s ease-in-out;
+	-moz-transition: width 0.3s ease-in-out;
+	-webkit-transition: width 0.3s ease-in-out;
+	-o-transition: width 0.3s ease-in-out;
+}
+.skill_con .skill_con_right ul li h3{
+	float:left;
+	height:40px;
+	width: 300px;
+	text-indent: 2em;
+	line-height: 40px;
+	text-transform:uppercase;
+	color: #000;
+	background:#cccccc;
+	
+	-moz-transform: rotate(90.0deg) translate(-40px,0px);
+	-moz-transform-origin: 0 100%;
+	-o-transform: rotate(90.0deg) translate(-40px,0px);
+	-o-transform-origin: 0 100%;
+	-webkit-transform: rotate(90.0deg) translate(-40px,0px);
+	-webkit-transform-origin: 0 100%;
+	transform: rotate(90.0deg) translate(-40px,0px);
+	transform-origin: 0 100%;
+	
+	background: -moz-linear-gradient( top, #999999, #cccccc);
+	background: -webkit-gradient(linear, left top, left bottom, from(#999999), to(#cccccc));
+}
+.skill_con .skill_con_right ul li div{
+	display:none;
+	float:left;
+	overflow: auto;
+	position:relative;
+	top:-30px;
+	left:50px;
+	margin:0;
+	width:640px;
+	height:300px;
+}
+.skill_con .skill_con_right ul li div img{
+	float: left;
+	margin-right: 8px;
+	width: 150px;
+	height: 160px;
+}
+.skill_con .skill_con_right ul li div h2{
+	width:180px;
+	height: 50px;
+	margin-left: 150px;
+}
+.skill_con .skill_con_right ul li div p{
+	width: 480px;
+	height: 200px;
+	margin-left: 160px;
+	font:normal 16px/40px "微软雅黑";
+}
+
+
+.skill_con .skill_con_right ul li:hover{
+	overflow: hidden;
+	width: 720px;
+}
+.skill_con .skill_con_right:hover ul li:hover div{
+	display:block;
+}
+.skill_con .skill_con_right:hover ul li:hover h3{
+	color:#fff;
+	background:#000000;
+}
+.skill_con .skill_con_right ul li h3:hover{
+	cursor:pointer;
+}
+
+/*demo*/
+.demo{
+	width: 100%;
+	height: 270px;
+}
+.demo_con{
+	width: 940px;
+	height: 270px;
+	margin: 0 auto;
+	border-bottom: 1px solid red;
+}
+.demo_con h2{
+	height: 50px;
+	font:normal 20px/50px "微软雅黑";
+	padding-left: 50px;
+	cursor: pointer;
+}
+.demo_con .demo_bottom{
+	width: 940px;
+	height: 200px;
+}
+.demo_con .demo_bottom .demo_d1, .demo_d2, .demo_d3{
+	float: left;
+	width: 280px;
+	height: 200px;
+	margin-left: 25px;
+	position: relative;
+}
+.demo_con .demo_bottom .demo_d1 a, .demo_d2 a, .demo_d3 a{
+	display: block;
+	width: 280px;
+	height: 200px;
+}
+.demo_con .demo_bottom .demo_d1{
+	background: url(img/mei.png) no-repeat;
+	background-size: 100% 100%;
+}
+.demo_con .demo_bottom .demo_d1 div{
+	width: 280px;
+	height: 40px;
+	background: #000;
+	opacity: 0.6;
+	position: absolute;
+	bottom: 10px;
+	display: none;
+}
+.demo_con .demo_bottom .demo_d1 div h3{
+	color: #fff;
+	text-align: center;
+	line-height: 40px;
+}
+.demo_con .demo_bottom .demo_d1:hover div{
+	display: block;
+}
+
+.demo_con .demo_bottom .demo_d2{
+	background: url(img/ju_hai.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+.demo_con .demo_bottom .demo_d2 div{
+	width: 280px;
+	height: 40px;
+	background: #000;
+	opacity: 0.6;
+	position: absolute;
+	bottom: 10px;
+	display: none;
+}
+.demo_con .demo_bottom .demo_d2 div h3{
+	color: #fff;
+	text-align: center;
+	line-height: 40px;
+}
+.demo_con .demo_bottom .demo_d2:hover div{
+	display: block;
+}
+
+.demo_con .demo_bottom .demo_d3{
+	background: url(img/photoraphy.png) no-repeat;
+	background-size: 100% 100%;
+}
+.demo_con .demo_bottom .demo_d3 div{
+	width: 280px;
+	height: 40px;
+	background: #fff;
+	opacity: 0.6;
+	position: absolute;
+	bottom: 10px;
+	display: none;
+}
+.demo_con .demo_bottom .demo_d3 div h3{
+	color: red;
+	text-align: center;
+	line-height: 40px;
+}
+.demo_con .demo_bottom .demo_d3:hover div{
+	display: block;
+}
+
+/*关于我*/
+.about{
+	width: 100%;
+	height: 280px;
+}
+.about_con{
+	width: 940px;
+	height: 280px;
+	margin: 0 auto;
+}
+.about_con h2{
+	height: 50px;
+	font:normal 20px/50px "微软雅黑";
+	padding-left: 50px;
+	cursor: pointer;
+}
+/*.about_con h3{
+	width: 450px;
+	height: 100px;
+	margin: 0 auto;
+	font:normal 16px/40px "微软雅黑";
+	color: red;
+	text-align: center;
+}*/
+.about_con h3{
+	width: 450px;
+	height: 30px;
+	margin: 0 auto;
+	font:normal 16px/40px "微软雅黑";
+	color: red;
+	text-align: center;
+	display: none;
+}
+
+.about_con p{
+	width: 450px;
+	height: 110px;
+	margin: 0 auto;
+	font: normal 14px/35px "微软雅黑";
+	text-align: center;
+	margin-top: 20px;
+	display: none;
+}
+
+
+
+/*底部*/
+.footer{
+	width: 100%;
+	height: 50px;
+}
+.footer_txt{
+	width: 940px;
+	margin: 0 auto;
+	height: 50px;
+	/*background: #69c1f1;*/
+}
+.footer_txt p{
+	width: 100%;
+	height: 50px;
+	font: normal 14px/50px "微软雅黑";
+	text-align: center;
+}
+.footer_txt p a{
+	color: #69c1f1;
+}
+.footer_txt p a:hover{
+	text-decoration: underline;
+}
+
+
